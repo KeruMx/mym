@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="es-MX">
+
+<head>
+  <title>Miriam & Manuel </title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/main.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="css/all.css"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header>
+      <div class="">
+      	<div class="parallax-completo row">
+	  <div class="fondo-parallax">
+
+	  </div>
+	  <div class="tituloNovios">
+            <div class="example">
+                <h1>Miriam<span class="detalle-verde">&amp;</span>Manuel</h1>
+            </div>
+	    <div class="hero-text">
+	      <br>
+	      <br>
+              <p class="">5 de Diciembre 2021 | Puerto Vallarta, Jal.</p>
+            </div>
+          </div>
+      	</div>
+      </div>
+    </header>
+    <div class="row fondo example">
+      <div id="frase-novios" class="example text-center texto-h">
+	<h3>Gracias por esta bonita aventura..
+       <br>¡Ahora nos toca vivir una nueva!</h3>
+      </div><h3>
+      <p class="text-center py-1 py-xl-2 titulos" id="demo"></p>
+      </h3>
+    </div>
+  </div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script>
+                    var countDownDate = new Date("Dec 05, 2021 15:00:00").getTime();
+                    var x = setInterval(function() {
+                    var now = new Date().getTime();
+                    var distance = countDownDate - now;
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    document.getElementById("demo").innerHTML = days + " d | " + hours + " h | " + minutes + " m | " + seconds + " s ";
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("demo").innerHTML = "EXPIRED";
+                        }
+                    }, 1000);
+</script>
+</body>
+
+</html>

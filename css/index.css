@@ -1,0 +1,367 @@
+/* Icons made by Flaticon title="Freepik" is licensed by http://creativecommons.org/licenses/by/3.0/*/
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top:100%;
+  left: 50%;
+  bottom: 100%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+}
+
+.subtituloFechaBoda{
+  font-size: 2rem;
+}
+
+.ciudadBoda{
+  font-size: .8rem;
+}
+
+#demo{
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-family: 'Brandon';
+  font-weight: 100 !important;
+  
+  
+
+}
+
+.contador{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.038), rgba(0, 0, 0, 0.059)), url('../img/background-1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+}
+
+.services .services-main-info {
+  background: url('../img/frame-time.png') no-repeat;
+  background-image: url('../img/frame-time.svg'), none;
+  background-size: contain;
+  padding: 15px 20px;
+  margin: .6em 0;
+  display: inline-block;
+  min-width: 5em;
+}
+
+.infoHotel{
+  background-color: #F7F7F7;
+}
+
+.iconoFlor{
+  width: 20px;
+}
+
+.iconoFlor2{
+  width: 100px;
+}
+
+.elementor-size-default{
+  margin: 0px 0px -10px 0px;
+  padding: 10px 0px 10px 0px;
+  background-color: #f4f4f4;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.precios{
+  background-color: #f4f4f4;
+}
+
+  .custom-control-input:checked~.custom-control-label::before {
+    border-color: #dc3545;
+    background-color: #dc3545;
+  }
+
+.mesaRegalos{
+  background: url('../img/bg_pattrn.png') repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.footerPaginaNovios{
+  background-color: #898989;
+}
+
+#myBtnTop {
+	display: none; 
+	position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #f9a9a9;
+    color: white;
+    cursor: pointer;
+    padding: 1px 8px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  
+  #myBtnTop:hover {
+	background-color: #c65555;  /* Add a dark-grey background on hover */
+	color: white;
+  }
+
+  .pagos-footer{
+    
+    height: 40px;
+    
+
+}
+
+.bg-verde{ background-color: #62c2b1}
+.bg-rosa{ background-color: #f2a1b2}
+.bg-gris{ background-color: #7d8d8f;color:white;}
+
+.text-verde{ color: #62c2b1;}
+.text-rosa{ color: #f2a1b2;}
+.text-gris{ color: #7d8d8f;}
+
+
+
+.fondo-cover-hotel{
+  background-image: url('../img/blue-bay/cover-hotel-blue-bay-riviera-maya.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 180px;
+}
+
+
+.fondo-cover-destino{
+  background-image: url('../img/blue-bay/background-destino.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 180px;
+}
+
+.fondo-cover-hotel1{
+  background-image: url('../img/reflect-nva/cover-rkgnv.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 180px;
+}
+
+.fondo-cover-hotel2{
+  background-image: url('../img/hilton-pva/hilton-cover.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 180px;
+}
+
+.fondo-cover-hotel3{
+  background-image: url('../img/now-esmerald/now-emerald-cancun-cover.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 180px;
+}
+
+.fondo-cover-hotel4 {
+  background-image: url('../img/las-hadas/banner-las-hadas.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 180px;
+}
+
+.fondo-cover-hotel5 {
+  background-image: url('../img/hr-guadalajara/banner-hr-guadalajara.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 180px;
+}
+
+.fondo-cover-destino1{
+  background-image: url('../img/reflect-nva/cover-destino.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 180px;
+}
+
+.fondo-cover-destino2{
+  background-image: url('../img/destinos/pto-vallarta/vallarta-cover.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 180px;
+}
+
+.fondo-cover-destino3{
+  background-image: url('../img/destinos/cancun/cover-destino.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 180px;
+}
+
+.fondo-cover-destino4 {
+  background-image: url('../img/destinos/manzanillo/banner-manzanillo.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 180px;
+}
+
+.fondo-cover-destino5 {
+  background-image: url('../img/destinos/guadalajara/banner-guadalajara.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 180px;
+}
+
+.tituloInformacionHotel{margin-top:-30px;}
+
+.form-control{
+  background-color: rgba(255, 255, 255, 0.548);
+}
+
+
+.clima{
+  max-width: 39%;
+}
+@media (min-width: 300px) and (max-width:380px) {.clima{max-width: 50%;}}
+
+ /* Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 575.98px) {.clima{max-width: 23%;}}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 767.98px) {}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 991.98px) { 
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top:80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+  .ciudadBoda {
+    font-size: 1.8rem;
+  }
+
+  #demo{
+    font-size: 3.2rem;
+
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 1199.98px) { 
+  .contador{height: 315px;}
+  
+}
+
+@media only screen and (max-device-width: 1366px) {
+	.hero-image {
+	  background-attachment: scroll;
+	}
+  }
+
+  .tituloNovios{
+    font-family: 'Brandon', serif;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  .tituloNovios2{
+    font-family: 'brandon';
+    color: #fff;
+  }
+  .tituloNovios2 h3{
+    font-size: 4em;
+  }
+
+  .tituloNovios h1{
+    font-size: 4em;
+  }
+
+  .detalle-verde {
+    font-family: "Amarillo";
+    color: #52c1ae !important;
+    font-size: .7em !important;
+    margin-left: .5em;
+    margin-right: .5em;;
+  }
+
+  @media only screen and (max-device-width: 1024px) {
+    .tituloNovios h1{
+      font-size: 3em;
+    }
+    }
+
+  @media only screen and (max-device-width: 768px) {
+    .tituloNovios h1{
+      font-size: 2em;
+    }
+    }
+
+  @media only screen and (max-device-width: 425px) {
+    .tituloNovios h1{
+      font-size: 2em;
+    }
+    }
+
+    .galeria-foto {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 263px;
+      overflow: hidden;
+      position: relative;
+    }
+    .galeria-foto .fondo {
+      position: absolute;
+      z-index: -100;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      /*margin-right: 1em;*/
+    }
+    .galeria-foto .fondo.alt {
+      position: absolute;
+      z-index: -100;
+      width: 100%;
+      object-fit: cover;
+      object-position:0 30%;
+    }
+
+    .galeria-foto .fondo.alt-2 {
+      position: absolute;
+      z-index: -100;
+      width: 100%;
+      object-fit: cover;
+      object-position:0 10%;
+    }
