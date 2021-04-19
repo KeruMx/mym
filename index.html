@@ -6,14 +6,18 @@
   <title>Miriam & Manuel </title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="css/main.css"/>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  
+  
 
   <link rel="stylesheet" type="text/css" href="css/all.css"/>
   <link rel="stylesheet" type="text/css" href="css/index.css"/>
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="">
     <header>
       <div class="">
       	<div class="parallax-completo row">
@@ -33,14 +37,14 @@
       	</div>
       </div>
     </header>
-    <div class="row fondo example">
-      <div id="frase-novios" class="example text-center texto-h">
-	<h3>Gracias por esta bonita aventura..
-       <br>¡Ahora nos toca vivir una nueva!</h3>
-      </div><h3>
-      <p class="text-center py-1 py-xl-2 titulos" id="demo"></p>
-      </h3>
-    </div>
+    <section class="contador2" style="height: 250px;">
+        <div class="row">
+            <div class="col-12">
+                <p id="frase-novios" class="text-center text-light pt-5 titulos">Gracias por esta bonita aventura..<br>¡Ahora nos toca vivir una nueva!</p>
+                <p class="text-center py-1 py-xl-2 titulos" id="demo"></p>
+            </div>
+        </div>
+    </section>
     <section class="container-fluid infoHotel py-5">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-4 col-xl-5 text-center mb-5">
@@ -136,93 +140,93 @@
     </section>
 
 
-
-    <div class="row justify-content-center">
-        <div class="col-12 text-center">
-            <h3 class="text-center text-light titulos text-uppercase">Confirmación de Asistencia</h3>
-            <hr style="width:50px; color:white;">
-        </div>
-        <div class="col-12 col-md-8 col-xl-6 text-center pb-1">
-            <form id="confirmacion" class="text-light">
-                <div class="form-row">
-                    <div class="col-12">
-                        <h3 class="text-uppercase">Agradecemos tu confirmación a la Boda</h3>
-                    </div>
-                    <div class="col-12 py-2">
-                        <div class="custom-control custom-radio custom-control-inline text-center">
-                            <input type="radio" id="customRadio1" name="customRadio" value="si" class="custom-control-input" checked="">
-                            <label class="custom-control-label" for="customRadio1">Si asistiré</label>
+    <section class="container-fluid confirmacion py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <h3 class="text-center text-light titulos text-uppercase">Confirmación de Asistencia</h3>
+                <hr style="width:50px; color:white;">
+            </div>
+            <div class="col-12 col-md-8 col-xl-6 text-center pb-1">
+                <form method="POST" action="https://dreams-wedding.com.mx/confirmacion-pag-novios.php" id="confirmacion" class="text-light">
+                    <div class="form-row">
+                        <div class="col-12">
+                            <h3 class="text-uppercase">Agradecemos tu confirmación a la Boda</h3>
                         </div>
-                        <div class="custom-control custom-radio custom-control-inline text-center">
-                            <input type="radio" id="customRadio2" name="customRadio" value="no" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadio2">No asistiré</label>
+                        <div class="col-12 py-2">
+                            <div class="custom-control custom-radio custom-control-inline text-center">
+                                <input type="radio" id="customRadio1" name="customRadio" value="si" class="custom-control-input" checked="">
+                                <label class="custom-control-label" for="customRadio1">Si asistiré</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline text-center">
+                                <input type="radio" id="customRadio2" name="customRadio" value="no" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio2">No asistiré</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="nombre">Nombre(es)*</label>
+                            <input type="text" name="nombre" class="form-control" id="nombre" placeholder="" required="">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="apellidos">Apellidos*</label>
+                            <input type="text" name="apellidos" class="form-control" id="apellidos" placeholder="" required="">
+                        </div>
+                        <div class="form-group offset-md-3 col-md-6 text-center">
+                            <label for="inputAddress">e-Mail*</label>
+                            <input type="email" name="email" class="form-control" id="email" placeholder="" required="">
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-center" id="inputOcultos">
+                        <div class="form-group offset-md-3 col-md-6 offset-md-3 text-center mx-0">
+                            <label for="inputState">Estaré asistiendo a...</label>
+                            <select id="inputState" name="inputState" class="form-control text-center">
+                                <option selected="">A la Ceremonia y Fiesta</option>
+                                <option>A la Ceremonia</option>
+                                <option>A la Fiesta</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState2">Adultos</label>
+                            <select id="inputState2" name="inputState2" class="form-control">
+                                <option selected="" value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-6 col-md-4">
+                            <label for="inputState3">Juniors (13-17 años)</label>
+                            <select id="inputState3" name="inputState3" class="form-control">
+                                <option selected="" value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-6 col-md-4">
+                            <label for="inputState4">Niños (2-12 años)</label>
+                            <select id="inputState4" name="inputState4" class="form-control">
+                                <option selected="" value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
                         </div>
                     </div>
 
-                    <div class="form-group col-md-6">
-                        <label for="nombre">Nombre(es)*</label>
-                        <input type="text" name="nombre" class="form-control" id="nombre" placeholder="" required="">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="apellidos">Apellidos*</label>
-                        <input type="text" name="apellidos" class="form-control" id="apellidos" placeholder="" required="">
-                    </div>
-                    <div class="form-group offset-md-3 col-md-6 text-center">
-                        <label for="inputAddress">e-Mail*</label>
-                        <input type="email" name="email" class="form-control" id="email" placeholder="" required="">
-                    </div>
-                </div>
-                <div class="form-row justify-content-center" id="inputOcultos">
-                    <div class="form-group offset-md-3 col-md-6 offset-md-3 text-center mx-0">
-                        <label for="inputState">Estaré asistiendo a...</label>
-                        <select id="inputState" name="inputState" class="form-control text-center">
-                            <option selected="">A la Ceremonia y Fiesta</option>
-                            <option>A la Ceremonia</option>
-                            <option>A la Fiesta</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="inputState2">Adultos</label>
-                        <select id="inputState2" name="inputState2" class="form-control">
-                            <option selected="" value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-6 col-md-4">
-                        <label for="inputState3">Juniors (13-17 años)</label>
-                        <select id="inputState3" name="inputState3" class="form-control">
-                            <option selected="" value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-6 col-md-4">
-                        <label for="inputState4">Niños (2-12 años)</label>
-                        <select id="inputState4" name="inputState4" class="form-control">
-                            <option selected="" value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                    </div>
-                </div>
+                    <input type="hidden" name="emailNovios" class="form-control" id="emailNovios" value="web@eze-trip.com" required="" style="opacity: 0; width:0%; height:0%;">
+                    <input type="hidden" name="urlPagNovios" class="form-control" id="urlPagNovios" value="https://dreams-wedding.com.mx/maricarmenyomar/" required="" style="opacity: 0; width:0%; height:0%;">
+                    <input type="hidden" name="idPagNovios" class="form-control" id="idPagNovios" value="68" required="" style="opacity: 0; width:0%; height:0%;">
 
-                <input type="hidden" name="emailNovios" class="form-control" id="emailNovios" value="web@eze-trip.com" required="" style="opacity: 0; width:0%; height:0%;">
-                <input type="hidden" name="urlPagNovios" class="form-control" id="urlPagNovios" value="https://dreams-wedding.com.mx/maricarmenyomar/" required="" style="opacity: 0; width:0%; height:0%;">
-                <input type="hidden" name="idPagNovios" class="form-control" id="idPagNovios" value="68" required="" style="opacity: 0; width:0%; height:0%;">
+                    <input type="hidden" name="recaptcha_response" id="recaptchaResponse" value="03AGdBq27kaoXfz50IgYtFrbCY7y9gTZyPbmJLbUrjJOHIjw9Jtd1Tb2K5pNo6WxmIpUEeNNV8TJcz4HHVtwo7lUTK_uhWcsUSUohLAgQqhTAWHzYSlOHVnNnwUWPYIfvptmd186qm06qYxQskcz0f_GYAjZBOr8pxKJsnRT0kTYH4PPAyg5tVReiGLEbLiWciuxOxfexm1UTa7mUUHpJE99MM0cTJNl8IYbyrMXPXHtDAqxF0-g1jU2MHpoAAjb6SzDknwWWaYj45zkS7hWX2AQiDGMFWURFdKrPTvIMnwTv4lunMP4xVWX1qPiO6Km0J351cIoM86g90nrNg6vBtDUvHurb_lMimmtZ653xQyZpJxjz5zR3FAc-FXv1aJ0Fsc8XF05rYi19zPsoLlJGIMEQex7-fermHX1eV0lfyKung8u-r8YcbGtJplWQeRxe4maFkdnb7d128D0iP1AaLBLptA1vif0dm6w">
+                    <button type="submit" class="btn bg-verde text-light text-uppercase" id="confirmar">Confirmar</button>
+                </form>
+            </div>
 
-                <input type="hidden" name="recaptcha_response" id="recaptchaResponse" value="03AGdBq27kaoXfz50IgYtFrbCY7y9gTZyPbmJLbUrjJOHIjw9Jtd1Tb2K5pNo6WxmIpUEeNNV8TJcz4HHVtwo7lUTK_uhWcsUSUohLAgQqhTAWHzYSlOHVnNnwUWPYIfvptmd186qm06qYxQskcz0f_GYAjZBOr8pxKJsnRT0kTYH4PPAyg5tVReiGLEbLiWciuxOxfexm1UTa7mUUHpJE99MM0cTJNl8IYbyrMXPXHtDAqxF0-g1jU2MHpoAAjb6SzDknwWWaYj45zkS7hWX2AQiDGMFWURFdKrPTvIMnwTv4lunMP4xVWX1qPiO6Km0J351cIoM86g90nrNg6vBtDUvHurb_lMimmtZ653xQyZpJxjz5zR3FAc-FXv1aJ0Fsc8XF05rYi19zPsoLlJGIMEQex7-fermHX1eV0lfyKung8u-r8YcbGtJplWQeRxe4maFkdnb7d128D0iP1AaLBLptA1vif0dm6w">
-                <button type="button" onClick="" class="btn bg-verde text-light text-uppercase" id="confirmar">Confirmar</button>
-            </form>
         </div>
-
-    </div>
-
+    </section>
 
     <div class="row justify-content-center">
         <div class="col-12 text-center">
@@ -265,6 +269,8 @@
                         }
                     }, 1000);
 </script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src = "./js/index.js"></script>
 </body>
 
 </html>
