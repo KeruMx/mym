@@ -58,6 +58,11 @@ body{
 }
 div.example {
   padding: 20px;
+  
+}
+.ti {
+  max-height: 80vh;
+  font-size: 80px;
 }
 
 @media screen and (min-width: 300px) {

@@ -136,7 +136,7 @@
 
 
 .fondo-cover-destino{
-  background-image: url('../img/blue-bay/background-destino.jpg');
+  background-image: url('../img/background-destino.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -190,7 +190,7 @@
 }
 
 .fondo-cover-destino1{
-  background-image: url('../img/reflect-nva/cover-destino.jpg');
+  background-image: url('../img/destino.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
